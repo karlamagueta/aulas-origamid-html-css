@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div {
+    display: block;
+    background: #111;
+    height: 160px;
+    margin: 40px;
+    border-radius: 4px;
+    padding: 20px;
+    
+}
+h1 {
+    text-align: center;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+}
+h2 {
+    display: inline-block;
+    color: white;
+}
+
+h2 .preco {
+    display: inline-block
+}
+
+p {
+    color: #b2b2b2;
+}
+
+button{
+    color: #111;
+    background: #febe01;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.preco {
+    color: #febe01;
+}
