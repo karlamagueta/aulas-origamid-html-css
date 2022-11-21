@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(235, 233, 230);
+    margin: 0px;
+}
+
+main{
+    text-align: center;
+}
+
+ a {
+    background-color: rgb(246, 246, 246);
+    color: black;
+    margin-right: 15px;
+    text-decoration: none;
+    display: flexbox;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 100px;
+    background-color: white;
+
+}
+
+.produto .descricao {
+    grid-column: 1;
+    padding: 20px;
+}
+
+.foto{
+    max-width: 100%;
+    grid-column: 2;
+    grid-row: 1 / 3;
+
+}
