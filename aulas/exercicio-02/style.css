@@ -16,9 +16,8 @@ div {
 }
 h1 {
     text-align: center;
-    border-radius: 4px;
-    color: rgb(0, 0, 0);
 }
+
 h2 {
     display: inline-block;
     color: white;
@@ -33,7 +32,7 @@ p {
 }
 
 button{
-    color: #111;
+    color: #332200;
     background: #febe01;
     border-radius: 4px;
     padding: 8px;
