@@ -16,6 +16,7 @@ main{
     max-width: 1000px;
     margin: auto;
 }
+
 .logo {
     padding: 10px;
     font-size: 45px;
@@ -35,34 +36,40 @@ main{
     font-size: 14px;
 }
 
+.bg-branco {
+    display: grid;
+    margin: 0px;
+    grid-column: 1fr;
+    background-color: #ffffff;
+    grid-row: 1 / 5;
+    justify-items: end;
+    align-items: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-right: 80px;
     margin-left: 80px;
-    justify-items: right;
-    background-color: white;
     margin-bottom: 60px;
     position: relative;
+    align-content: center;
 }
 
 .produto{
     grid-column: 1;
     grid-row: 1;
+    padding: 0px;
     margin-right: 20px;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    place-self: end right;
-    font-size: 30px;
+    font-size: 17px;
 }
-
 .descricao {
-    text-align: right;
     grid-column: 1;
     grid-row: 2;
     padding: 0px;
     margin-right: 20px;
     font-size: 17px;
+    text-align: end;
 }
 
 .botao {
@@ -73,25 +80,22 @@ main{
     background-color: #ee2211;
     padding: 10px 20px;
     margin-right: 15px;
-    place-self: right right;
     font-size: 14px;
     border-radius: 4px;
 }
 
 .foto {
+    display: block;
     max-width: 100%;
     grid-column: 2;
     grid-row: 1 / 5;
 }
 
 .detalhe {
-    display: grid;
-    grid-template-columns: 1 / -1;
-    place-self: center;
+    grid-template-columns: 1fr;
     background-color: #ee2211;
     height: 3px;
     width: 80px;
-    grid-row: 1;
     position: absolute;
     top: 25px;
 }
@@ -112,6 +116,7 @@ p {
     text-align: left;
     margin-left: 30px;
     margin-right: 20px;
+    font-size: 16px;
 }
 
 .strong {
