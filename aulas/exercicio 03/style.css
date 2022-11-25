@@ -1,39 +1,64 @@
 @charset "UTF-8";
 
-body{
+body {
     background-color: #f7f7f7;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
 }
 
-header{
+header {
     text-align: center;
     margin-bottom: 50px;
 }
 
-main{
+main {
     max-width: 1000px;
     margin: auto;
 }
 
 .logo {
     padding: 10px;
-    font-size: 45px;
+    font-size: 3rem;
 }
 
-.menu a {
-    display: flexbox;
+.menu ul {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: white;
     color: #2e2e2e;
     text-decoration: none;
-    border-radius: 4px;
-    padding: 10px;
-    margin-right: 10px;
+    padding: 10px 20px;
+    gap: 10px;
     position: relative;
-    font-size: 14px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+ul li {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+}
+
+ul li:hover {
+    transition: 0.2s;
+    border: 1.5px solid #900;
+}
+
+li {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    display: flexbox;
+    list-style: none;
+    background-color: #ffffff;
+}
+
+li a {
+    text-decoration: none;
+    color: #2e2e2e;
 }
 
 .bg-branco {
@@ -55,21 +80,22 @@ main{
     margin-bottom: 60px;
 }
 
-.produto{
+.produto {
+    display: inline-block;
     grid-column: 1;
     grid-row: 1;
     padding: 0px;
     margin-right: 20px;
-    font-size: 17px;
+    font-size: 1.5rem;
 }
 .descricao {
     grid-column: 1;
     grid-row: 2;
     padding: 0px;
     margin-right: 20px;
-    font-size: 17px;
-    text-align: end;
+    font-size: 1rem;
     line-height: 1.3;
+    text-align: end;
 }
 
 .botao {
@@ -80,8 +106,13 @@ main{
     background-color: #ee2211;
     padding: 10px 20px;
     margin-right: 15px;
-    font-size: 14px;
+    font-size: 1rem;
     border-radius: 4px;
+}
+
+.botao:hover {
+    background-color: #900;
+    border: ;
 }
 
 .foto {
@@ -102,50 +133,98 @@ main{
 }
 
 .vantagens {
-    font-size: 50px;
+    font-size: 3.2rem;
     text-align: right;
     margin-right: 20px;
     color: #c6c6c6;
     background-color: #f7f7f7;
+    text-align: right;
     grid-row: 5 / 11;
     align-self: center;
+    background: url(img/onda.svg);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 p {
     display: grid;
     grid-column: 2;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-right: 20px;
-    font-size: 16px;
+    font-size: 1rem;
+    margin: 0px;
 }
+
+.vantagem1:nth-child(odd) {
+    background-color: #f7f7f7;
+    gap: 10px;
+}
+
+.vantagem1:hover {
+    border-left: 3px solid #ee2211;
+    transition: 0.3s;
+}
+
+p, .strong {
+    margin-left:  20px;
+}
+
 
 .strong {
+    display: inline-block;
     font-weight: bold;
+    position: relative;
+    justify-content: left;
 }
 
+.grid2 {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    padding: 45px;
+    line-height: 1.5;
+}
+
+div p {
+    margin-left: 50px;
+}
+
+/*
 .grid2{
     display: grid;
-    padding: 20px;
+    padding: 40px;
     grid-column: 2;
     grid-template-columns: 1fr 4fr;
     justify-content: left;
     justify-items:left;
     background-color: white;
 }
+*/
 
-.icone{
-    place-self: center right;
+.icone::before {
+    align-content:center;
+    padding: 10px;
+    position: absolute;
+
 }
-.espaconeutro{
+
+.espaconeutro {
     display: grid;
     background-color: #f7f7f7;
     grid-row: 5 / 11;
     place-content: center end;
 }
 
-footer{
+footer {
     background-color: white;
     text-align: center;
     padding: 20px;
 }
+
+
+
+/*
+- ajustar icones das vantagens
+-substituir span decorativo pelo pseudoelemento correto
+*/
