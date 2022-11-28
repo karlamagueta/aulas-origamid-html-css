@@ -78,6 +78,7 @@ li a {
     margin-right: 80px;
     margin-left: 80px;
     margin-bottom: 60px;
+    position: relative;
 }
 
 .produto {
@@ -93,6 +94,7 @@ li a {
     grid-row: 2;
     padding: 0px;
     margin-right: 20px;
+    margin-bottom: 20px;
     font-size: 1rem;
     line-height: 1.3;
     text-align: end;
@@ -112,7 +114,7 @@ li a {
 
 .botao:hover {
     background-color: #900;
-    border: ;
+    transition: 0.3s;
 }
 
 .foto {
@@ -122,14 +124,17 @@ li a {
     grid-row: 1 / 5;
 }
 
-.detalhe {
-    grid-template-columns: 1fr;
+.detalhe::before {
+    content: "";
+    display: inline-block;
+    width: 80px;
     background-color: #ee2211;
     height: 3px;
-    width: 80px;
+    top: 30px;
+    margin-left: -40px;
+
     position: absolute;
-    top: 25px;
-    right: -40px;
+
 }
 
 .vantagens {
@@ -150,15 +155,14 @@ p {
     display: grid;
     grid-column: 2;
     text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 5px 20px ;
     font-size: 1rem;
     margin: 0px;
 }
 
 .vantagem1:nth-child(odd) {
     background-color: #f7f7f7;
-    gap: 10px;
+    gap: 20px;
 }
 
 .vantagem1:hover {
@@ -167,7 +171,8 @@ p {
 }
 
 p, .strong {
-    margin-left:  20px;
+    margin-left:  30px;
+    justify-content: left;
 }
 
 
@@ -183,30 +188,23 @@ p, .strong {
     background-color: rgb(255, 255, 255);
     align-content: center;
     padding: 45px;
-    line-height: 1.5;
+    
 }
 
 div p {
-    margin-left: 50px;
+    margin-left: 30px;
+line-height: 1.5;
 }
 
-/*
-.grid2{
-    display: grid;
-    padding: 40px;
-    grid-column: 2;
-    grid-template-columns: 1fr 4fr;
-    justify-content: left;
-    justify-items:left;
-    background-color: white;
+.icone {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 5px;
 }
-*/
 
 .icone::before {
-    align-content:center;
-    padding: 10px;
-    position: absolute;
-
+    margin: 30px;
+    display: inline-block;
 }
 
 .espaconeutro {
@@ -226,5 +224,4 @@ footer {
 
 /*
 - ajustar icones das vantagens
--substituir span decorativo pelo pseudoelemento correto
 */
