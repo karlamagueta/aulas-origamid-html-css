@@ -131,13 +131,18 @@ li a {
     object-position: top center;
 }
 
+.foto img {
+    object-fit: cover;
+    object-position: top center;
+}
+
 .detalhe::before {
     content: "";
     display: inline-block;
     width: 80px;
     background-color: #ee2211;
     height: 3px;
-    top: 30px;
+    top: 15px;
     margin-left: -40px;
 
     position: absolute;
@@ -228,14 +233,29 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 795px) {
+
+    header{
+        font-size: 0.7rem;
+        margin-bottom: 20px;
+    }
+
+    .menu a {
+        font-size: 0.7rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin: 10px;
+        margin-bottom: 5px;
+    }
 
     .detalhe::before {
         display: none;
     }
 
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    main .grid {
+        grid-template-columns: 1fr;
     }
 
 }
