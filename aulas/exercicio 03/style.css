@@ -127,6 +127,8 @@ li a {
     max-width: 100%;
     grid-column: 2;
     grid-row: 1 / 5;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .detalhe::before {
@@ -224,4 +226,16 @@ footer {
     background-color: white;
     text-align: center;
     padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .detalhe::before {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
 }
