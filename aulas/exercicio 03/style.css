@@ -9,7 +9,7 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 main {
@@ -18,8 +18,8 @@ main {
 }
 
 .logo {
-    padding: 10px;
-    font-size: 3rem;
+    padding: 15px;
+    margin-top: 5px;
 }
 
 .menu ul {
@@ -71,7 +71,7 @@ li a {
     margin: 0px;
     grid-column: 1fr;
     background-color: #ffffff;
-    grid-row: 1 / 5;
+    grid-row: 1 / 2;
     justify-items: end;
     align-content: center;
     position: relative;
@@ -144,9 +144,7 @@ li a {
     height: 3px;
     top: 15px;
     margin-left: -40px;
-
     position: absolute;
-
 }
 
 .vantagens {
@@ -156,7 +154,7 @@ li a {
     color: #c6c6c6;
     background-color: #f7f7f7;
     text-align: right;
-    grid-row: 5 / 11;
+    grid-row: 2 / 3;
     align-self: center;
     background: url(img/onda.svg);
     padding-top: 30px;
@@ -172,7 +170,7 @@ p {
     margin: 0px;
 }
 
-.vantagem1:nth-child(odd) {
+div .vantagem1:nth-child(odd) {
     background-color: #f7f7f7;
     gap: 20px;
 }
@@ -201,12 +199,11 @@ p, .strong {
     align-content: center;
     padding: 45px;
     gap: 10px;
-
 }
 
 div p {
     margin-left: 30px;
-line-height: 1.5;
+    line-height: 1.5;
 }
 
 .icone {
@@ -223,7 +220,7 @@ line-height: 1.5;
 .espaconeutro {
     display: grid;
     background-color: #f7f7f7;
-    grid-row: 5 / 11;
+    grid-row: 2 / 3;
     place-content: center end;
 }
 
@@ -233,29 +230,69 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 795px) {
+@media (max-width: 800px) {
 
-    header{
-        font-size: 0.7rem;
+    header {
         margin-bottom: 20px;
     }
-
     .menu a {
         font-size: 0.7rem;
     }
 
     .logo {
-        font-size: 1.5rem;
-        margin: 10px;
-        margin-bottom: 5px;
+        margin: 5px;
+        margin-bottom: 0px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        margin: 30px 60px;
     }
 
     .detalhe::before {
         display: none;
     }
 
-    main .grid {
-        grid-template-columns: 1fr;
+    .descricao {
+        text-align: center;
+    }
+
+    .produto{
+        justify-self: center;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    
+    .botao {
+        display: block;
+        justify-self: center;
+        padding: 8px 18px;
+        margin-bottom: 15px;
+    }
+
+    .foto img {
+        grid-row: 2;
+    }
+
+    .vantagens {
+        grid-row: 3;
+        word-spacing: 999999rem;
+        text-align: center;
+        padding: 0px;
+        margin: 30px;
+        font-size: 2.3rem;
+    }
+
+    .espaconeutro {
+        grid-row: 3;
+    }
+
+    .grid2 {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        padding: 45px;
+        gap: 10px;
     }
 
 }
