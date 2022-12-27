@@ -8,6 +8,7 @@ body {
 }
 
 header {
+    display: flex;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -26,7 +27,7 @@ i#burguer {
     display: none;
 }
 
-.menu ul {
+.menu li a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
