@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import "./header.css";
+@import "./main.css";
 @font-face {
     font-family: 'Bodoni';
     src: url('bodoni_2.ttf') format('ttf');
@@ -7,113 +9,14 @@
     font-family: 'Bodoni2';
     src: url('BODONI-N.TTF') format('ttf');
 }
-body{
+body {
     background-color: #fff;
-    margin: 0px;
+    font-family: "barlow";
+    margin: 0px auto;
     text-decoration: none;
     list-style: none;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 40px;
+    max-width: 1440px;
 }
 
-.main{
-    display: grid;
-    grid-template-columns: 12;
-    grid-column: 60px;
-    gap: 45px;
-    max-width: 100%;
-    justify-content: center;
-}
 
-header {
-    display: grid;
-    max-width: 100%;
-    align-items: center;
-    border-bottom: 2px;
-}
-
-.logo{
-    display: inline;
-    grid-column: 1;
-    grid-row: 1;
-    grid-template-columns: 1;
-    max-height: 60px;
-    color: #1E1E1E;
-}
-
-.menu {
-    display: flex;
-    justify-content: end;
-    margin-top: -60px;
-    padding: 0px;
-}
-
-.menu ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-}
- 
-.menu ul li {
-    list-style: none;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #999;
-    font-size: 1.2rem;
-    padding: 20px, 10px;
-}
-menu ul li {
-    display: inline-flex;
-    font-family: 'Gothic A1';
-}
-
-ul li:hover {
-    transition: 0.3s;
-    border-bottom: 2px solid #E9A55B;
-}
-
-a{
-    font-family: 'Gothic A1';
-}
-
-.intro {
-    display: grid;
-    max-width: 1045px;
-    margin: 0px;
-    margin-left: 105px;
-    margin-right: 105px;
-    justify-tracks: center;
-}
-
-.foto-ka {
-    max-width: 290px;
-    grid-column: 1;
-}
-
-h1 {
-    grid-column: 2;
-    font-family: 'Bodoni2';
-    color: #1E1E1E;
-    text-transform: uppercase;
-    font-size: 4.5rem;
-    line-height: 86px;
-}
-
-.adelia {
-    font-family: adelia;
-}
-
-.localizacao {
-    grid-column: 2;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 116px;
-    font-size: 1.5rem;
-    font-family: 'barlow';
-    color: #999;
-}
 
