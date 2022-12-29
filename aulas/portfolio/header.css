@@ -9,7 +9,8 @@ header {
 .logo{
     display: block;
     max-width: 100%;
-    max-height: 60px;
+    max-height: 100px;
+    font-weight: 400;
     color: #1E1E1E;
     margin: left;
     padding-left: 40px;
@@ -75,12 +76,17 @@ a{
 
     .menu {
         display: flex;
+        margin: 0;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
-        margin-right: auto;
-        margin-left: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 0.7rem;
         background-color: #1E1E1E;
+    }
+
+    .menu li {
+        flex-wrap: wrap;
     }
 
 }
