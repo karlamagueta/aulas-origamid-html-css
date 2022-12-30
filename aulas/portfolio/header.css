@@ -46,7 +46,7 @@ menu ul li {
     font-family: 'Gothic A1';
 }
 
-ul li:hover {
+ menu ul li:hover {
     transition: 0.3s;
     border-bottom: 2px solid #E9A55B;
 }
