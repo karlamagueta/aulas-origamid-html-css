@@ -42,7 +42,7 @@ header {
     display: block;
 }
 menu ul li {
-    display: inline-flex;
+    display: flex;
     font-family: 'Gothic A1';
 }
 
@@ -53,10 +53,6 @@ ul li:hover {
 
 a{
     font-family: 'Gothic A1';
-}
-
-@media (max-width: 1220px) {
-
 }
 
 @media (max-width: 700px) {
@@ -76,7 +72,7 @@ a{
 
     .menu {
         display: flex;
-        margin: 0;
+        margin: 0px;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 10px;
@@ -90,3 +86,21 @@ a{
     }
 
 }
+
+@media (max-width: 720px) {
+
+    nav#menu-principal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu ul {
+        justify-content: center;
+    }
+    .menu ul li{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
