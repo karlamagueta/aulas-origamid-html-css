@@ -4,6 +4,8 @@ header {
     margin-bottom: 10px;
     margin-top: 40px;
     justify-content: space-between;
+    max-width: 1440px;
+    margin: 0px auto;
 }
 
 .logo{
@@ -53,6 +55,14 @@ menu ul li {
 
 a{
     font-family: 'Gothic A1';
+}
+
+@media (max-media: 985px) {
+
+    .header {
+        max-width: 985px;
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 700px) {
