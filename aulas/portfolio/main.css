@@ -85,6 +85,7 @@ h2 {
     font-family: "barlow";
     grid-column: 2;
     margin: 26px 65px 26px 155px;
+    position: relative;
 }
 
 .grid-empresas {
@@ -94,7 +95,6 @@ h2 {
     border-radius: 5px;
     align-items: center;
     margin-bottom: 40px;
-    padding: 10px 0px;
 
 }
 
@@ -128,7 +128,7 @@ h2 {
     font-family: "Gothic A1";
     font-size: 1.25rem;
     line-height: 1.5;
-    position: relative;
+    
 }
 
 .cargo {
@@ -150,15 +150,17 @@ h2 {
     margin: 10px;
 }
 
-.detalhe::before {
+/*.detalhe::after {
+    content: "";
     display: block;
     position: absolute;
-    height: 20px;
-    width: 3px;
-    border: #E9A55B solid 2px;
+    height: 18px;
+    width: 0px;
+    justify-content: center;
+    border: #E9A55B solid 5px;
     position: absolute;
-    margin-left: -20px;
-}
+    margin-left: -6px;
+}*/
 
 
 
@@ -188,6 +190,23 @@ h2 {
 
     .foto-ka {
         max-width: 250px;
+    }
+
+    .itens-menu {
+        font-size: 3rem;
+    }
+
+    .sobre-exp {
+        font-size: 1.3rem;
+    }
+    
+    .detalhe::after {
+        display: none;
+    }
+
+    .data {
+        margin: 26px 35px 26px 100px;
+
     }
     
 }
@@ -235,8 +254,29 @@ h2 {
         margin-top: -60px;
     }
 
+    .grid-exp {
+        display: block;
+    }
+    .sobre-exp {
+        font-size: 1.1rem;
+        margin: 40px;
+    }
+
+    .data {
+        margin-left: 40px;
+    }
+
+    .grid-empresas {
+        margin: 0px 20px;
+    }
+
+    .itens-menu{
+        color: #eaeaea ;
+    }
+
+
 }
-@media (max-width: 720px) {
+@media (max-width: 735px) {
 
     .main {
         margin: auto;
@@ -250,20 +290,8 @@ h2 {
         max-width: 100px;
     }
 
-}
-
-@media (max-width: 720px) {
-
-    .main {
-        margin: auto;
-    }
-
-    .localizacao{
-        margin-top: 0px;
-    }
-
-    .foto-ka {
-        max-width: 100px;
+    .itens-menu {
+        font-size: 4.5rem;
     }
 
 }
@@ -276,5 +304,13 @@ h2 {
 
     .localizacao {
         margin-top: 20px;
+    }
+    
+    .itens-menu {
+        font-size: 2.5rem;
+    }
+
+    .sobre-exp {
+        font-size: 1.1rem;
     }
 }
