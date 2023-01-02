@@ -162,6 +162,30 @@ h2 {
     margin-left: -6px;
 }*/
 
+.bg-diferente{
+    background-color: #444;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.itens-menu#formacao {
+
+    grid-column: 2;
+    font-size: 8.75rem;
+    color: #3c3c3c;
+    grid-row:  1 / 4;
+    font-family: "Bodoni";
+    align-self: center;
+    margin: 0px;
+    margin-right: 40px;
+    text-align: end;
+
+}
+
+.sobre-formacao {
+    color: #f8f8f8;
+}
+
 
 
 @media (max-width: 1200px) {
@@ -193,7 +217,7 @@ h2 {
     }
 
     .itens-menu {
-        font-size: 3rem;
+        font-size: 6rem;
     }
 
     .sobre-exp {
@@ -258,7 +282,7 @@ h2 {
         display: block;
     }
     .sobre-exp {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         margin: 40px;
     }
 
@@ -272,6 +296,7 @@ h2 {
 
     .itens-menu{
         color: #eaeaea ;
+        font-size: 3.5rem;
     }
 
 
@@ -291,7 +316,7 @@ h2 {
     }
 
     .itens-menu {
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
 
 }
@@ -307,10 +332,42 @@ h2 {
     }
     
     .itens-menu {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .sobre-exp {
         font-size: 1.1rem;
     }
+
+    .grid-empresas {
+        grid-template-columns: 1fr;
+    }
+
+    .cargo {
+        color:#999;
+        font-size: 1rem;
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 40px;
+        font-weight: 500;
+        margin-top: 0px;
+    }
+
+    .empresa {
+        grid-row: 1;
+    }
+
+    .grid-empresas p{
+        grid-row: 3;
+    }
+
+    .caixa-exp {
+        grid-row: 4;
+    }
+
+    .data {
+        display: block;
+        justify-itens: center;
+    }
+
 }
