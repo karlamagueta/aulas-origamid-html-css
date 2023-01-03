@@ -4,8 +4,10 @@ header {
     margin-bottom: 10px;
     margin-top: 40px;
     justify-content: space-between;
-    max-width: 1440px;
-    margin: 0px auto;
+    margin: 0px;
+    max-width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .logo{
@@ -29,6 +31,7 @@ header {
 .menu ul {
     display: flex;
     flex-wrap: wrap;
+    border: 2px solid transparent;
 }
  
 .menu ul li {
@@ -43,58 +46,48 @@ header {
     font-size: 1.2rem;
     display: block;
 }
-menu ul li {
+nav ul li {
     display: flex;
     font-family: 'Gothic A1';
+    border-bottom: 2px solid transparent;
 }
 
- menu ul li:hover {
+nav ul li:hover {
     transition: 0.3s;
-    border-bottom: 2px solid #E9A55B;
+    border-color: #E9A55B;
 }
 
 a{
     font-family: 'Gothic A1';
 }
 
-@media (max-media: 985px) {
+
+@media (max-width: 800px) {
 
     .header {
-        max-width: 985px;
-        justify-content: space-between;
-    }
-}
-
-@media (max-width: 700px) {
-
-    .header {
-        display: grid;
-        flex-direction: column;
-        margin: 0 auto;
+        display: block;
+        margin: 0px;
         font-size: 0.5rem;
     }
 
     .logo {
         display: block;
-        justify-self: center;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .menu {
         display: flex;
-        margin: 0px;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 10px;
         margin-bottom: 20px;
         font-size: 0.7rem;
-        background-color: #1E1E1E;
+        background-color: transparent;
     }
 
-    .menu li {
+    .menu ul li {
         flex-wrap: wrap;
     }
-
 }
 
 @media (max-width: 720px) {
@@ -113,4 +106,3 @@ a{
     }
 
 }
-

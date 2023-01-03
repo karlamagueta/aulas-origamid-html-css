@@ -180,6 +180,8 @@ h2 {
 .grid-2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
 .itens-menu#formacao {
@@ -191,8 +193,9 @@ h2 {
     font-family: "Bodoni";
     align-self: center;
     margin: 0px;
-    margin-right: 40px;
     text-align: end;
+    margin-right: 90px;
+    word-break: break-all;
 
 }
 
@@ -210,7 +213,6 @@ h2 {
 .grid-formacao {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: ;
 }
 
 .lista-formacao {
@@ -407,7 +409,7 @@ h2 {
 
 }
 
-@media (max-width:663px) {
+@media (max-width: 663px) {
 
     .foto-ka {
         display: none;
