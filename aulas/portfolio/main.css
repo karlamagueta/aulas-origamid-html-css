@@ -64,7 +64,6 @@ h1 {
 h2 {
     word-break: break-all;
     margin-left: 40px;
-    margin-bottom: -0px;
 }
 
 .sobre-exp {
@@ -75,6 +74,7 @@ h2 {
     color: #5f5f5f; 
     margin-right: 90px;
     align-self: center;
+    max-width: 750px;
 }
 
 .bold {
@@ -178,10 +178,10 @@ h2 {
 }
 
 .grid-2 {
-    margin: 0px auto;
     max-width: 1440px;
+    margin: auto;
     display: grid;
-    margin-top: 100px;
+    margin-top: 110px;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 110px;
 }
@@ -193,10 +193,6 @@ h2 {
     grid-row:  1 / 6;
     font-family: "Bodoni";
     align-content: center;
-    margin: 0px;
-    margin-left: 40px;
-    max-width: 4ch;
-    word-break: break-all;
 }
 
 .sobre-formacao {
@@ -207,16 +203,16 @@ h2 {
     align-self: center;
     grid-column: 2;
     margin-top: 105px;
-    margin-left: 40px;
+    margin-left: 120px;
+    max-width: 750px;
 }
 
 .grid-formacao {
     display: grid;
     grid-column: 2;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-left: 30px;
-    margin-right: auto;
-    
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-left: 60px;
+    margin-right: auto;  
 }
 
 .cursos-recentes {
@@ -227,7 +223,7 @@ h2 {
     color: #777;
     grid-column: 2;
     position: relative;
-    margin-left: 40px;
+    margin-left: 120px;
 }
 
 .icone-cursos {
@@ -285,10 +281,23 @@ h2 {
     margin: 55px 10px;
 }
 
+.outros-cursos {
+    text-transform: uppercase;
+    font-family: "Gothic A1";
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #777;
+    grid-column: 2;
+    position: relative;
+    margin-left: 90px;
+
+}
+
 .cursos-antigos {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    margin-left: 50px;
 }
 
 .cursos-antigos ul{
@@ -304,11 +313,11 @@ h2 {
     grid-column: 2;
     align-items: top;
     position: relative;
-    margin-left: 20px;
+    margin-left: 45px;
 }
 
 
-.grid-2 ul {
+.grid-2 .lista-idiomas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 2;
@@ -317,6 +326,7 @@ h2 {
     margin-top: -10px;
     gap: 10px 10px;
     max-width: 400px;
+    margin-left: 50px;
 }
 
 .grid-2 ul li {
