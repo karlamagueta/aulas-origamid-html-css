@@ -165,11 +165,8 @@ h2 {
     margin: 10px;
 }
 
-.bg-diferente{
+/*.bg-diferente{
     background-color: #444;
-    margin: 0px;
-    max-width: 100vw;
-    
 }
 
 .bold-form {
@@ -178,22 +175,17 @@ h2 {
 }
 
 .grid-2 {
-    max-width: 1440px;
-    margin: auto;
     display: grid;
+    margin: 0px auto;
     margin-top: 110px;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 110px;
 }
 
 .itens-menu#formacao {
-    grid-column: 1;
-    font-size: 8.75rem;
     color: #3c3c3c;
-    grid-row:  1 / 6;
-    font-family: "Bodoni";
-    align-content: center;
 }
+
 
 .sobre-formacao {
     color: #f8f8f8;
@@ -203,14 +195,14 @@ h2 {
     align-self: center;
     grid-column: 2;
     margin-top: 105px;
-    margin-left: 120px;
+    margin-left: 80px;
     max-width: 750px;
 }
 
 .grid-formacao {
     display: grid;
     grid-column: 2;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: 60px;
     margin-right: auto;  
 }
@@ -223,7 +215,7 @@ h2 {
     color: #777;
     grid-column: 2;
     position: relative;
-    margin-left: 120px;
+    margin-left: 80px;
 }
 
 .icone-cursos {
@@ -241,7 +233,7 @@ h2 {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    width: 210px;
+    width: 180px;
     height: 230px;
     align-tracks: space-between;
 }
@@ -298,10 +290,12 @@ h2 {
     flex-direction: column;
     line-height: 1.6;
     margin-left: 50px;
+    grid-column: 2;
 }
 
 .cursos-antigos ul{
     margin-bottom: -40px;
+    grid-column: 2;
 }
 
 .idiomas {
@@ -348,7 +342,7 @@ h2 {
     position: absolute;
     left: -20px;
     top: 18px;
-}
+} */
 
 
 @media (max-width: 1200px) {

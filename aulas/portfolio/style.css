@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "./header.css";
 @import "./main.css";
+@import "./formacao.css";
 @font-face {
     font-family: 'Bodoni';
     src: url('bodoni_2.ttf') format('ttf');
