@@ -13,6 +13,7 @@
 
 .itens-menu#formacao {
     color: #3c3c3c;
+    grid-row: 1 / 7;
 }
 
 .bold-form {
@@ -29,6 +30,7 @@
     margin-right: 90px;
     align-self: center;
     max-width: 750px;
+    margin-top: 105px;
 
 }
 
@@ -103,12 +105,15 @@
     margin-right: auto;
 }
 
+.idiomas {
+    grid-column: 2;
+}
 .icone-idioma {
     height: 24px;
     position: absolute;
     display: block;
     content: '';
-    top: 18px;
+    top: 0px;
     left: -40px;
 }
 
@@ -137,16 +142,33 @@
 
 .outros-cursos {
     grid-column: 2;
-    text-transform: uppercase;
-    font-family: "Gothic A1";
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: #777;
     position: relative;
 }
 
+.outros-cursos h3 {
+    text-transform: uppercase;
+    color: #777;
+}
 
+.cursos-antigos {
+    grid-column: 2;
+    list-style: none;
+    color: #d8d8d8;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-left: -40px;
+}
 
+.icone-cursos-antigos {
+    height: 24px;
+    position: absolute;
+    display: block;
+    content: '';
+    top: 20px;
+    left: -40px;
+
+}
 
 
 
