@@ -56,7 +56,6 @@
     flex-wrap: wrap;
     margin-left: 0px;
     list-style-type: disc;
-    margin-bottom: auto;
 }
 
 .lista-formacao {
@@ -170,5 +169,71 @@
 
 }
 
+@media (max-width: 980px ) {
+    .sobre-formacao{
+        font-size: 1.25rem;
+    }
 
+    .grid-formacao{
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .grid-2 {
+        display: block;
+        margin: 0px;
+    }
+
+    .bg-diferente {
+        padding-bottom: 1px;
+    }
+
+    .itens-menu#formacao {
+        grid-column: 2;
+        word-break: keep-all;
+        color: #E9A55B;
+        line-height: 1.7;
+        justify-content: start;
+        margin-top: 30px;
+        
+    }
+
+    .sobre-formacao {
+        margin-top: 0px;
+        margin: 10px 30px 10px 30px;
+    }
+
+    .cursos-recentes {
+        grid-column: 2;
+        margin-left: 80px;
+    }
+    .icone-cursos {
+        top: 0px;
+        left: -40px;
+    }
+
+    .grid-formacao {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cursos-antigos {
+        margin-left: 0px;
+    }
+
+    h3 {
+        margin-left: 80px;
+    }
+
+    .lista-idiomas {
+        margin-left: 0px;
+    }    
+
+    .icone-cursos-antigos {
+        left: 40px;
+        top: 0px;
+    }
+
+}
 

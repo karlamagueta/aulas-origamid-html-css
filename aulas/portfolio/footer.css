@@ -1,0 +1,9 @@
+.contato h2 {
+    background-color: aquamarine;
+    justify-self: center;
+    word-break: keep-all;
+    font-size: 8.75rem;
+    color: #F2F2F2;
+    font-family: "Bodoni";
+    align-self: center;
+}
