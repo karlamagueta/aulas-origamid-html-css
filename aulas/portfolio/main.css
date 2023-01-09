@@ -1,5 +1,6 @@
 .main{
     max-width: 100%;
+    margin-bottom: 0px;
 }
 
 .intro {
@@ -46,7 +47,7 @@ h1 {
     display: grid;
     margin-top: 100px;
     grid-template-columns: 1fr 2fr;
-    margin-bottom: 110px;
+    margin-bottom: 0px;
 }
 
 .itens-menu {
@@ -123,6 +124,7 @@ h2 {
 .grid-empresas p {
     font-family: "barlow";
     font-size: 1.125rem;
+    padding: 0px;
     margin-left: 40px;
     line-height: 1.5;
     color: #5f5f5f;
@@ -275,9 +277,6 @@ h2 {
         margin-left: 40px;
     }
 
-    .grid-empresas {
-        margin: 10px 20px;
-    }
 
     .itens-menu{
         color: #eaeaea ;
@@ -362,7 +361,9 @@ h2 {
 
     .grid-exp {
         margin-bottom: 0px;
-        grid-template-columns: 1fr ;
+        margin-left: 20px;
+        grid-template-columns: 1fr 7fr;
+        padding-bottom: -20px;
     }
 
     .grid-exp p {
@@ -379,18 +380,16 @@ h2 {
     }
 
     .itens-menu {
+        padding-top: 50px;
         grid-column: 2;
         word-break: keep-all;
         color: #E9A55B;
         line-height: 1.7;
     }
-    .empresa {
-        position: relative;
-    }
 
     .data {
-        grid-column: 2;
-        grid-row: 1;
+        display: block;
+        margin:;
     }
-
+    
 }

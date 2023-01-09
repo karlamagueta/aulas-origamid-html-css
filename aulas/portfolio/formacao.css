@@ -8,7 +8,6 @@
     display: grid;
     margin-top: 100px;
     grid-template-columns: 1fr 2fr;
-    margin-bottom: 110px;
 }
 
 .itens-menu#formacao {
@@ -54,7 +53,7 @@
 .grid-formacao {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0px;
+    margin-left: -10px;
     list-style-type: disc;
 }
 
@@ -129,6 +128,7 @@
     font-family: 'barlow';
     font-size: 1.125rem;
     margin-left: -40px;
+    column-gap: 40px;
 }
 
 .idioma-contraste {
