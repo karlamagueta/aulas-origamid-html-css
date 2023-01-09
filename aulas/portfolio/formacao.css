@@ -54,7 +54,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -10px;
-    list-style-type: disc;
 }
 
 .lista-formacao {
@@ -120,7 +119,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 105px;
-    max-width: 400px;
+    max-width: 600px;
     margin-left: 0px;
     list-style: none;
     color: #d8d8d8;
@@ -129,6 +128,12 @@
     font-size: 1.125rem;
     margin-left: -40px;
     column-gap: 40px;
+    justify-items: start;
+}
+
+.lista-idiomas ul li {
+    justify-self: start;
+    padding: 10px;
 }
 
 .idioma-contraste {
