@@ -11,6 +11,7 @@ header {
     display: flex;
     text-align: center;
     margin-bottom: 40px;
+    justify-content: space-between;
 }
 
 main {
@@ -25,6 +26,17 @@ main {
 
 i#burguer {
     display: none;
+}
+
+nav ul {
+    position: absolute;
+    left: -170px;
+    z-index: 1;
+    top: 40px;
+}
+
+.menu-e-burguer {
+    position: relative;
 }
 
 .menu li a {
@@ -60,6 +72,7 @@ li {
     list-style: none;
     background-color: #ffffff;
     border: 1.5px solid rgb(255, 255, 255);
+
 }
 
 a {
@@ -329,3 +342,7 @@ footer {
     }
 
 }
+
+/* 
+-resolver menu criando outra nav dentro da div
+-media prefers-color-scheme dark mode
