@@ -24,12 +24,6 @@ main {
     margin-top: 5px;
 }
 
-
-
-i#burguer {
-    display: none;
-}
-
 nav ul {
     z-index: 1;
     display: flex;
@@ -46,15 +40,13 @@ nav ul {
     flex-wrap: wrap;
     color: #2e2e2e;
     text-decoration: none;
-    padding: 10px 20px;
-    gap: 10px;
+    padding: 10px 10px;
     position: relative;
     font-size: 1rem;
     text-transform: uppercase;
 }
 
 ul li {
-    padding: 10px 20px;
     text-decoration: none;
     color: black;
     border-radius: 4px;
@@ -250,14 +242,30 @@ footer {
 
     header {
         margin-bottom: 20px;
+        flex-wrap: wrap;
     }
 
-    .menu{
-        display: none;
-    }
     .logo {
         margin: 5px;
         margin-bottom: 0px;
+        flex-grow: 1;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu ul {
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .menu ul li a {
+        font-size: 0.8rem;
+    }
+
+    .menu-e-burguer {
+        margin-left: -30px;
     }
 
     .grid {
@@ -311,19 +319,6 @@ footer {
         gap: 10px;
     }
 
-    i#burguer {
-        display: block;
-        text-align: left;
-        padding: 20px;
-
-    }
-
-    i#burguer:hover {
-        cursor: pointer;
-        color: #ee2211;
-        transition: 0.3s;
-    }
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -341,6 +336,10 @@ footer {
 
     p {
         color: #f7f7f7;
+    }
+
+    .menu ul li a {
+        color: #c6c6c6;
     }
 
     .espaconeutro {
