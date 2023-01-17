@@ -24,15 +24,16 @@ main {
     margin-top: 5px;
 }
 
+
+
 i#burguer {
     display: none;
 }
 
 nav ul {
-    position: absolute;
-    left: -170px;
     z-index: 1;
-    top: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .menu-e-burguer {
@@ -68,11 +69,8 @@ li {
     padding: 10px 20px;
     text-decoration: none;
     color: black;
-    display: flexbox;
     list-style: none;
-    background-color: #ffffff;
-    border: 1.5px solid rgb(255, 255, 255);
-
+    border: 1.5px solid transparent;
 }
 
 a {
@@ -253,9 +251,6 @@ footer {
     header {
         margin-bottom: 20px;
     }
-    /*.menu a {
-        font-size: 0.7rem;
-    } */
 
     .menu{
         display: none;
@@ -273,18 +268,6 @@ footer {
     div .detalhe { 
         display: none;
     }
-
-    /*
-    .detalhe::before {
-        content: "";
-        width: 50px;
-        background-color: #ee2211;
-        height: 3px;
-        top: 5px;
-        position: absolute;
-        right: 350px;
-    }
-    */
 
     .descricao {
         text-align: center;
@@ -343,6 +326,48 @@ footer {
 
 }
 
-/* 
--resolver menu criando outra nav dentro da div
--media prefers-color-scheme dark mode
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2e2e2e;
+    }
+
+    .bg-branco {
+        background-color: #373737;
+    }
+
+    h2 {
+        color: #f1f1f1;
+    }
+
+    p {
+        color: #f7f7f7;
+    }
+
+    .espaconeutro {
+        background-color: #282828;
+    }
+
+    .grid2 {
+        background-color: #373737;
+    }
+
+    .vantagens {
+        background: none;
+    }
+
+    .vantagem1 {
+        background-color: #373737;
+    }
+
+    div .vantagem1:nth-child(odd) {
+        background-color: #2f2f2f;
+        gap: 20px;
+    }
+
+    footer {
+        background-color: #282828;
+        color: #c6c6c6;
+    }
+
+}
+
