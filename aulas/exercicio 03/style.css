@@ -1,10 +1,18 @@
 @charset "UTF-8";
 
 body {
-    background-color: #f7f7f7;
+    background-color: var(--bg-1);
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
+}
+
+:root {
+    --cor-primaria: #ee2211;
+    --cor-primaria-escura: #900;
+    --bg-1: #f7f7f7;
+    --bg-2: #fff;
+    --logo: #000000;
 }
 
 header {
@@ -22,6 +30,7 @@ main {
 .logo {
     padding: 15px;
     margin-top: 5px;
+    col
 }
 
 nav ul {
@@ -54,7 +63,7 @@ ul li {
 
 ul li:hover {
     transition: 0.2s;
-    border: 1.5px solid #900;
+    border: 1.5px solid var(--cor-primaria-escura);
 }
 
 li {
@@ -78,7 +87,7 @@ li a {
     display: grid;
     margin: 0px;
     grid-column: 1fr;
-    background-color: #ffffff;
+    background-color: var(--bg-2);
     grid-row: 1 / 2;
     justify-items: end;
     align-content: center;
@@ -115,10 +124,10 @@ li a {
 
 .botao {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--texto-1);
     grid-column: 1;
     grid-row: 3;
-    background-color: #ee2211;
+    background-color: var(--cor-primaria);
     padding: 10px 20px;
     margin-right: 15px;
     font-size: 1rem;
@@ -126,7 +135,7 @@ li a {
 }
 
 .botao:hover {
-    background-color: #900;
+    background-color: var(--cor-primaria-escura);
     transition: 0.3s;
 }
 
@@ -148,7 +157,7 @@ li a {
     content: "";
     display: inline-block;
     width: 80px;
-    background-color: #ee2211;
+    background-color: var(--cor-primaria);
     height: 3px;
     top: 15px;
     margin-left: -40px;
@@ -160,7 +169,7 @@ li a {
     text-align: right;
     margin-right: 20px;
     color: #c6c6c6;
-    background-color: #f7f7f7;
+    background-color: var(--bg-1);
     text-align: right;
     grid-row: 2 / 3;
     align-self: center;
@@ -179,12 +188,12 @@ p {
 }
 
 div .vantagem1:nth-child(odd) {
-    background-color: #f7f7f7;
+    background-color: var(--bg-1);
     gap: 20px;
 }
 
 .vantagem1:hover {
-    border-left: 3.5px solid #ee2211;
+    border-left: 3.5px solid var(--cor-primaria);
     transition: 0.3s;
 }
 
@@ -203,7 +212,7 @@ p, .strong {
 
 .grid2 {
     display: block;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-2);
     align-content: center;
     padding: 45px;
     gap: 10px;
@@ -227,13 +236,13 @@ div p {
 
 .espaconeutro {
     display: grid;
-    background-color: #f7f7f7;
+    background-color: var(--bg-1);
     grid-row: 2 / 3;
     place-content: center end;
 }
 
 footer {
-    background-color: white;
+    background-color: var(--bg-2);
     text-align: center;
     padding: 20px;
 }
@@ -313,7 +322,7 @@ footer {
 
     .grid2 {
         display: block;
-        background-color: rgb(255, 255, 255);
+        background-color: var(--bg-2);
         align-content: center;
         padding: 45px;
         gap: 10px;
@@ -322,32 +331,40 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+    :root {
+        --bg-1: #1c1c1c;
+        --bg-2: #121212;
+        --logo: #ffffff;
+        --texto-1: #f1f1f1;
+        --texto-2: #f7f7f7;
+    }
+
     body {
-        background-color: #2e2e2e;
+        background-color: var(--bg-1);
     }
 
     .bg-branco {
-        background-color: #373737;
+        background-color: var(--bg-2);
     }
 
     h2 {
-        color: #f1f1f1;
+        color: var(--texto-1);
     }
 
     p {
-        color: #f7f7f7;
+        color: var(--texto-2);
     }
 
     .menu ul li a {
-        color: #c6c6c6;
+        color: var(--texto-1);
     }
 
     .espaconeutro {
-        background-color: #282828;
+        background-color: var(--bg-1);
     }
 
     .grid2 {
-        background-color: #373737;
+        background-color: var(--bg-2);
     }
 
     .vantagens {
@@ -355,17 +372,17 @@ footer {
     }
 
     .vantagem1 {
-        background-color: #373737;
+        background-color: var(--bg-2);
     }
 
     div .vantagem1:nth-child(odd) {
-        background-color: #2f2f2f;
+        background-color: var(--bg-1);
         gap: 20px;
     }
 
     footer {
-        background-color: #282828;
-        color: #c6c6c6;
+        background-color: var(--bg-2);
+        color: var(--texto-1);
     }
 
 }
