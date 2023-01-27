@@ -1,113 +1,24 @@
+@import './css/global.css';
+@import './css/utilidades/cores.css';
+@import './css/home/header.css';
+
+/*----Utilidades---*/
+@import './css/utilidades/componentes.css';
+
+/*-------Home--------*/
+@import './css/home/introducao.css';
 
 
-body {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+
+/*--------Fontes------*/
+@font-face {
+    font-family: 'poppins';
+    src: url(https://github.com/itfoundry/Poppins);
 }
 
-:root {
-    --b: #000000;
-    --c11: #101010;
-    --c10: #212121;
-    --c9: #383838;
-    --c8: #494949;
-    --c7: #666666;
-    --c6: #898989;
-    --c5: #9f9f9f;
-    --c4: #BDBDBD;
-    --c3: #D1D1D1;
-    --c2: #E3E3E3;
-    --c1: #F4F4F4;
-    --w:  #ffffff;
-    --p5: #492C00;
-    --p4: #724400;
-    --p3: #C38100;
-    --p2: #E3A609;
-    --p1: #FFC700;
-
+@font-face {
+    font-family: 'roboto';
+    src: local(Roboto-Medium.ttf);
 }
 
-ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.header-bg {
-    background-color: var(--b);
-}
-
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header-menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.header-menu a {
-    color: var(--w);
-    position: relative;
-}
-
-.header-menu a::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 2px;
-    background: var(--w);
-    margin-top: 4px;
-    position: absolute;
-}
-
-.header-menu a:hover::after {
-    width: 100%;
-    transition: ease-in 0.25s;
-}
-
-@media (max-width: 800px) {
-    .header-menu {
-        gap: 20px;
-    }
-
-    .header-menu a {
-        background-color: var(--c11);
-        border-radius: 4px;
-        padding: 12px 16px;
-    }
-
-    .header-menu a:hover {
-        background-color: var(--c10);
-        transition: 0.4s;
-    }
-
-    .header a::after {
-        display: none;
-    }
-}
-
-@media (max-width: 400px){
-    .header-menu {
-        gap: 12px;
-    }
-
-    .header-menu a {
-        font-size: 0.875rem;
-    }
-}
 
