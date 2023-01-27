@@ -20,6 +20,8 @@ header {
     text-align: center;
     margin-bottom: 40px;
     justify-content: space-between;
+    max-width: 900px;
+    margin: 0px auto;
 }
 
 main {
@@ -124,7 +126,7 @@ li a {
 
 .botao {
     text-decoration: none;
-    color: var(--texto-1);
+    color: var(--bg-1);
     grid-column: 1;
     grid-row: 3;
     background-color: var(--cor-primaria);
