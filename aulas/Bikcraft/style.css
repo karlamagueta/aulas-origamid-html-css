@@ -1,12 +1,15 @@
 @import './css/global.css';
 @import './css/utilidades/cores.css';
+@import './css/utilidades/tipografia.css';
 @import './css/home/header.css';
+
 
 /*----Utilidades---*/
 @import './css/utilidades/componentes.css';
 
 /*-------Home--------*/
 @import './css/home/introducao.css';
+@import './css/home/grid-produtos.css';
 
 
 
