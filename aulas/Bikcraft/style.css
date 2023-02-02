@@ -11,8 +11,8 @@
 @import './css/home/introducao.css';
 @import './css/home/lista-produtos.css';
 @import './css/home/tecnologia.css';
-
-
+@import './css/home/parceiros.css';
+@import './css/home/depoimento.css';
 
 /*--------Fontes------*/
 @font-face {
@@ -25,4 +25,7 @@
     src: local(Roboto-Medium.ttf);
 }
 
-
+@font-face {
+    font-family: 'merri';
+    src: local(Merriweather-BoldItalic.ttf);
+}

@@ -12,7 +12,7 @@ body {
     --margin: 0px auto 0px auto;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, blockquote {
     margin: 0px;
 }
 

@@ -21,8 +21,8 @@
     padding-top: 80px;
 }
 
-.tecnologia-conteudo a {
-    padding-bottom: 80px;
+.tecnologia-conteudo > a {
+    padding-bottom: 20px;
 }
 .tecnologia-conteudo h1 {
     padding-bottom: 32px;
@@ -84,7 +84,11 @@
         margin-bottom: 0px;
     }
     .tecnologia-conteudo > a {
-        padding: 20px 0;
+        padding: 8px 0;
+    }
+
+    .link { 
+        font: 500 1.2rem/1.5 'poppins', sans-serif;
     }
     .tecnologia-conteudo > h1  {
         padding-bottom: 16px;
@@ -97,7 +101,6 @@
     .tecnologia-conteudo > p {
         padding-bottom: 12px;
     }
-
 
     .tecnologia-imagem {
     display: none;
