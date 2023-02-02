@@ -6,7 +6,7 @@
 .tecnologia-conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 140px;
+    gap: 120px;
     padding-top: 80px;
 }
 
@@ -28,7 +28,7 @@
     padding-bottom: 32px;
 }
 
-.tecnologia-conteudo h2 {
+.tecnologia-conteudo > h2 {
     padding-bottom: 20px;
 }
 .tecnologia-conteudo p {
@@ -40,7 +40,7 @@
     display: grid;
     grid-template-columns:  1fr 1fr;
     gap: 40px;
-    margin-bottom: 120px;
+    margin-bottom:60px;
     padding-top: 80px;
 }
 
@@ -65,5 +65,67 @@
     margin-bottom: 8px;
 }
 
-/* Arrumar responsivo agora */ 
+@media (max-width: 800px) {
+    .tecnologia-bg {
+        box-shadow: inherit;
+        margin-top: 40px;
+    }
+    
+    .tecnologia-conteiner {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-top: 0px;
+    }
+
+    .tecnologia-conteudo {
+        padding-top: 0px;    
+        padding-bottom: 0px;
+
+        margin-bottom: 0px;
+    }
+    .tecnologia-conteudo > a {
+        padding: 20px 0;
+    }
+    .tecnologia-conteudo > h1  {
+        padding-bottom: 16px;
+    }
+    
+    .tecnologia-conteudo > h2 {
+        padding-bottom: 12px;
+        padding-top: 40px;
+    }
+    .tecnologia-conteudo > p {
+        padding-bottom: 12px;
+    }
+
+
+    .tecnologia-imagem {
+    display: none;
+    }
+
+    .tecnologia-grid-2 {
+        margin-bottom: 20px;
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tecnologia-grid-2 {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+        gap: 12px;
+    }
+
+    .tecnologia-grid-2 > h2 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .tecnologia-grid-2 > p {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+
+}
+
 
