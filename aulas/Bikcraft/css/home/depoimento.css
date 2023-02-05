@@ -8,17 +8,23 @@
 }
 
 .depoimento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0px;
+}
+
+.depoimento-img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    object-position: center;
-    border-radius: 0px;
 }
 
 .depoimento-conteudo {
     padding: 40px 40px 80px 80px;
     align-self: end;
-
+    position: relative;
 }
 
 .depoimento-conteudo p {
@@ -30,24 +36,68 @@
     color: var(--p5);
     letter-spacing: -0.02em;
     max-width: 32ch;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.depoimento p::before, .depoimento p::after {
-    content: '“';
-    color: var(--p2);
+.depoimento-conteudo span {
+    display: flex;
+    justify-content: start;
+    padding-top: 20px;
+}
+
+.depoimento-conteudo::before, .depoimento-conteudo::after {
     position: absolute;
     font-size: 96px;
+    font-family: 'serif';
+    color: var(--p2);
 }
 
-.depoimento p::before {
+.depoimento-conteudo::before {
     content: '“';
-    left: -48px;
-    bottom: 120px;
+    left: 32px;
+    top: 0px;
 }
 
-.depoimento p::after {
+.depoimento-conteudo::after {
     content: '”';
 }
 
-/*Reajustar responsivo com aspas*/
+/* _______________ Arrumar essa caralha de aspas___________*/
+
+@media (max-width:800px) {
+    .depoimento {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .depoimento-img {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+    }
+
+    .depoimento-conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        padding: 40px 40px 40px 40px;
+        margin: 0 auto;
+    }
+
+    .depoimento-conteudo::before {
+        
+    }
+}
+
+@media (max-width:600px) {
+    .depoimento-conteudo p {
+        font-size: 1.5rem;
+    }
+
+    .depoimento p::before {
+        bottom: 60px;
+    }
+
+}
