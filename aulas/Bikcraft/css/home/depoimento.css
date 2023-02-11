@@ -5,6 +5,7 @@
     display: grid;
     max-height: 800px;
     align-items: end;
+    overflow: hidden;
 }
 
 .depoimento img {
@@ -24,7 +25,6 @@
 .depoimento-conteudo {
     padding: 40px 40px 80px 80px;
     align-self: end;
-    position: relative;
 }
 
 .depoimento-conteudo p {
@@ -33,37 +33,31 @@
     font-weight: 700;
     font-size: 2rem;
     line-height: 1.5;
-    color: var(--p5);
     letter-spacing: -0.02em;
     max-width: 32ch;
     display: flex;
+    margin-bottom: 32px;
     flex-direction: column;
+    position: relative;
 }
 
 .depoimento-conteudo span {
     display: flex;
     justify-content: start;
-    padding-top: 20px;
 }
 
-.depoimento-conteudo::before, .depoimento-conteudo::after {
-    position: absolute;
+.depoimento p::before {
     font-size: 96px;
     font-family: 'serif';
     color: var(--p2);
+    position: absolute;
 }
 
-.depoimento-conteudo::before {
+.depoimento p::before {
     content: '“';
-    left: 32px;
-    top: 0px;
+    left: -60px;
+    top: -60px;
 }
-
-.depoimento-conteudo::after {
-    content: '”';
-}
-
-/* _______________ Arrumar essa caralha de aspas___________*/
 
 @media (max-width:800px) {
     .depoimento {
@@ -87,7 +81,7 @@
     }
 
     .depoimento-conteudo::before {
-        
+
     }
 }
 
