@@ -76,6 +76,10 @@
         flex-direction: column;
     }
 
+    .depoimento-conteudo p {
+        text-align: center;
+    }
+
     .depoimento-img {
         object-fit: cover;
         width: 100%;

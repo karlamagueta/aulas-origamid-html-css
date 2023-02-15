@@ -1,0 +1,71 @@
+.seguro-conteiner {
+    background-color: var(--c10);
+}
+
+.seguro-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.seguro-conteudo h1 {
+    padding: 60px 0 20px 0;
+    display: block;
+    grid-column: 1;
+    text-align: start;
+    align-content: center;
+    margin: 0;
+}
+
+.seguro-itens span {
+    display: block;
+    text-align: end;
+}
+
+.seguro-itens .btn, .btn-cinza {
+    grid-column: 1;
+}
+
+.seguro-itens {
+    background-color: var(--b);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-row: 2;
+    border-radius: 5px;
+    padding: 32px 32px 32px 60px;
+    margin-bottom: 60px;
+}
+
+.seguro-itens h2 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.seguro-itens ul li {
+    padding-left: 32px;
+    padding-bottom: 16px;
+    grid-column: 1 / -1;
+    position: relative;
+}
+
+.seguro-itens li::before {
+    content: '';
+    width: 13px;
+    height: 9px;
+    display: block;
+    background-image: url('/img/icones/lista.svg');
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+
+@media (max-width:800px) {
+    .seguro-conteudo {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Forçar 1 coluna no responsivo para itens de seguro
+-ajuste btn cinza
+-ajuste bg mais claro
+-ajuste tamanho bg item prata
