@@ -1,0 +1,19 @@
+.footer-bg {
+    background-color: var(--b);
+    padding-bottom: 80px;
+}
+
+.footer-conteiner {
+    display: grid;
+    grid-template-columns: 3fr 5fr 4fr;
+    padding-top: 80px;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social a {
+    margin-right: 20px;
+
+}

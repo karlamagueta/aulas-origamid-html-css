@@ -1,7 +1,8 @@
 @import './css/global.css';
 @import './css/utilidades/cores.css';
 @import './css/utilidades/tipografia.css';
-@import './css/home/header.css';
+@import './css/header.css';
+@import './css/footer.css';
 
 
 /*----Utilidades---*/
@@ -14,6 +15,9 @@
 @import './css/home/parceiros.css';
 @import './css/home/depoimento.css';
 @import './css/home/seguros.css';
+
+/*------Global--------*/
+@import './css/home/footer.css';
 
 /*--------Fontes------*/
 @font-face {
