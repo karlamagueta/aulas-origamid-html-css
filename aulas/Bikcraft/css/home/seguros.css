@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    align-items: center;
 }
 
 .seguro-conteudo h1 {
@@ -13,7 +14,6 @@
     display: block;
     grid-column: 1;
     text-align: start;
-    align-content: center;
     margin: 0;
 }
 
@@ -32,7 +32,7 @@
     grid-template-columns: 1fr auto;
     grid-row: 2;
     border-radius: 5px;
-    padding: 32px 32px 32px 60px;
+    padding: 32px 32px 0px 60px;
     margin-bottom: 60px;
 }
 
@@ -61,11 +61,27 @@
 
 @media (max-width:800px) {
     .seguro-conteudo {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .seguro-conteudo h1 {
+        margin-bottom: 40px;
+    }
+
+    .seguro-itens {
+        padding-bottom: 32px;
     }
 }
 
-/* Forçar 1 coluna no responsivo para itens de seguro
--ajuste btn cinza
--ajuste bg mais claro
--ajuste tamanho bg item prata
+@media (max-width:600px) {
+    .seguro-itens a {
+        font-size: 0.7rem;
+    }
+
+    .seguro-conteudo h1 {
+        margin-bottom: 20px;
+    }
+}
+
