@@ -6,6 +6,7 @@
 .footer-conteiner {
     display: grid;
     grid-template-columns: 3fr 5fr 4fr;
+    gap: 40px;
     padding-top: 80px;
 }
 
@@ -28,7 +29,7 @@
     content: '';
     display: block;
     width: 260px;
-    height: 2px;
+    height: 1px;
     top: 20px;
     background: var(--c8);
     position: absolute;
@@ -37,7 +38,7 @@
     content: '';
     display: block;
     width: 260px;
-    height: 2px;
+    height: 1px;
     bottom: -15px;
     background: var(--c8);
     position: absolute;
@@ -45,6 +46,12 @@
 
 .footer-social {
     display: flex;
+    gap: 20px;
+    margin-top: -20px;
+}
+
+.footer-social img {
+    object-fit: contain;
 }
 
 .footer-social a {
@@ -53,12 +60,75 @@
 
 .footer-info ul li {
     padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.footer-info ul li:hover {
+    color: var(--w);
+    transition: .3s;
 }
 
 .footer-info ul {
     margin-top: 30px;
 }
 
-.footer-info ul li {
-    text-transform: uppercase;
+.footer-conteiner p {
+    grid-column:  1 / -1;
+    justify-self: start;
+    margin-top: 16px;
+}
+
+@media (max-width: 800px) {
+    .footer-conteiner {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding-top: 40px;
+    }
+    
+    .footer-conteiner p {
+        justify-self: center;
+    }
+    .footer-logo {
+        grid-column: 1 / -1;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer-conteiner {
+        grid-template-columns: 1fr;
+    }
+    .footer-social{
+        position: relative;
+    }
+    .footer-social::after {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 1px;
+        top: 80px;
+        background: var(--c8);
+        position: absolute;
+    }
+
+    .footer-contato ul li:nth-child(3)::before {
+        display: none;
+    }
+
+    .footer-contato ul::after {
+        display: none;
+    }
+
+    .footer-contato ul li:nth-child(3){
+        padding-top: 0px;
+    }
+
+    .footer-info {
+        margin-top: 40px;
+    }
+
+    .footer-social {
+        margin-top: -40px;
+    }
 }
