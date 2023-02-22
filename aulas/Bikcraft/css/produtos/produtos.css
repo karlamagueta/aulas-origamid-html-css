@@ -1,0 +1,32 @@
+.produtos-lista {
+    margin-bottom: 120px;
+}
+
+.bicicleta-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.bicicleta-conteudo h3 {
+    position: relative;
+    padding-left: 60px;
+}
+
+.bicicleta-img img {
+    object-fit: contain;
+}
+
+.btn-arrow {
+    width: 14px;
+}
+
+.icon-descricao {
+    position: absolute;
+    align-self: center;
+}
+
+.icon-descricao img{
+    height: 15px;
+    width: 20px;
+}

@@ -19,6 +19,9 @@
 /*---------Termos----------*/
 @import './css/termos/termos.css';
 
+/*---------Produtos----------*/
+@import './css/produtos/produtos.css';
+
 /*------Global--------*/
 @import './css/home/footer.css';
 
