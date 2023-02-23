@@ -17,6 +17,10 @@
     
 }
 
+.btn.btn-seta {
+    padding: 12px 60px 12px 36px;
+}
+
 .btn.btn-cinza {
     color: var(--c5);
     background: var(--c10);
