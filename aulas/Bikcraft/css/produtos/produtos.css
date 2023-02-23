@@ -48,6 +48,10 @@
     align-content: start;
 }
 
+.produtos-conteudo img {
+    width: 24px;
+}
+
 .produtos-conteudo h3 {
     grid-column: 1 / -1;
     position: relative;
@@ -69,8 +73,8 @@
     grid-column: 1 / -1;
 }
 
-.produtos-conteudo ul li {
-    align-content: center;
+.produtos-conteudo li {
+    align-items: center;
 }
 
 .produtos-conteudo ul li img {
@@ -82,7 +86,7 @@
     display: block;
     position: relative;
     padding: 10px 0 10px 0;
-    margin-left: 52px;
+    margin-left: 32px;
 }
 
 .btn-seta {
@@ -134,6 +138,11 @@
         left: 160px;
     }
 
+    .produtos-conteudo ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .produtos-conteudo ul li span {
         font-size: 1rem;
     }
@@ -143,6 +152,15 @@
     .btn-seta img{
         left: 130px;
     }
+
+    .produtos-conteudo p {
+        margin-bottom: 8px;
+    }
+
+    .produtos-conteudo ul li span {
+        font-size: 0.875rem;
+    }
+
 }
 
 
