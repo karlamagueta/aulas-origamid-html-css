@@ -27,6 +27,7 @@
 
 /*------Seguros--------*/
 @import './css/seguros/seguros.css';
+@import './css/seguros/faq.css';
 
 /*--------Fontes------*/
 @font-face {

@@ -11,7 +11,7 @@ body {
     --margin: 0px auto 0px auto;
 }
 
-h1, h2, h3, p, a, blockquote {
+h1, h2, h3, p, a, blockquote, dd {
     margin: 0px;
 }
 
