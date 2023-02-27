@@ -25,6 +25,9 @@
 /*------Global--------*/
 @import './css/home/footer.css';
 
+/*------Seguros--------*/
+@import './css/seguros/seguros.css';
+
 /*--------Fontes------*/
 @font-face {
     font-family: 'poppins';
