@@ -29,8 +29,11 @@
 @import './seguros/seguros.css';
 @import './seguros/faq.css';
 
-/*------Seguros--------*/
+/*------Produtos--------*/
 @import './produtos/nimbus.css';
+
+/*------Bicicleta--------*/
+@import './bicicleta/bicicleta.css';
 
 /*--------Fontes------*/
 @font-face {
