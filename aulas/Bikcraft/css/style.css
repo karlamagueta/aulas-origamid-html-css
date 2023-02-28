@@ -1,0 +1,49 @@
+@import './global.css';
+@import './utilidades/cores.css';
+@import './utilidades/tipografia.css';
+@import './header.css';
+@import './footer.css';
+
+
+/*----Utilidades---*/
+@import './utilidades/componentes.css';
+
+/*-------Home--------*/
+@import './home/introducao.css';
+@import './home/lista-produtos.css';
+@import './home/tecnologia.css';
+@import './home/parceiros.css';
+@import './home/depoimento.css';
+@import './home/seguros.css';
+
+/*---------Termos----------*/
+@import './termos/termos.css';
+
+/*---------Produtos----------*/
+@import './produtos/produtos.css';
+
+/*------Global--------*/
+@import './home/footer.css';
+
+/*------Seguros--------*/
+@import './seguros/seguros.css';
+@import './seguros/faq.css';
+
+/*------Seguros--------*/
+@import './produtos/nimbus.css';
+
+/*--------Fontes------*/
+@font-face {
+    font-family: 'poppins';
+    src: url(https://github.com/itfoundry/Poppins);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: local(Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'merri';
+    src: local(Merriweather-BoldItalic.ttf);
+}
