@@ -37,11 +37,10 @@
     grid-row: span 1 / -1;
 }
 
-.bicicleta-comprar div span {
+.bicicleta-comprar span span {
     display: flex;
     gap: 8px;
     padding: 4px 8px;
-    background-color: var(--b);
     flex-wrap: wrap;
     align-items: space-between;
     border-radius: 4px;
@@ -50,3 +49,183 @@
 .bicicleta div span + span {
     margin-top: 16px;
 }
+
+.info > p {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.015rem;
+}
+
+.info-bg {
+    background-color: var(--b);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 32px 32px;
+    align-items: start;
+    gap: 12px 32px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+}
+
+.info-bg img {
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.info-bg h2 {
+    margin-bottom: 8px;
+}
+
+.ficha-bg {
+    background-color: var(--b);
+    align-items: start;
+    border-radius: 4px;
+    padding: 32px;
+    margin: 0px;
+}
+
+.ficha-bg span {
+    color: var(--c6);
+}
+
+.ficha-bg ul {
+    margin: 0px;
+}
+
+.ficha-bg li {
+    justify-content: space-between;
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--c10);
+}
+
+.ficha-bg li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width:950px) {
+    .bicicleta {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-bg {
+        padding-top: 30px;
+    }
+
+    .titulo {
+        margin-bottom: 20px;
+    }
+
+    .titulo p {
+        text-transform: capitalize;
+    }
+
+    .bicicleta-img {
+        grid-row: 2;
+    }
+
+    .bicicleta-comprar {
+        margin-bottom: 0px;
+        grid-template-columns: max-content;
+        margin-top: 20px;
+    }
+
+    .bicicleta-comprar a {
+        grid-row: 2;
+        margin-top: 12px;
+    }
+
+}
+
+@media (max-width:650px) {
+    .bicicleta-comprar a {
+margin-bottom: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .info-bg{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*-------- escolha a sua-------*/
+
+#bicicletasection h1 {
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+#bicicleta.lista-produtos {
+    max-width: 1160px;
+    margin-bottom: 80px;
+    padding: 0px;
+}
+
+@media (max-width:900px) {
+    #bicicleta.lista-produtos {
+        gap: 20px;
+    }
+
+    #bicicleta section h1 {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:650px) {
+    #bicicleta a h2 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    #bicicleta section h1 {
+        margin-bottom: 40px;
+    }
+
+    #bicicleta li p {
+        font-size: 0.5rem;
+        margin-bottom: 0px;
+    }
+}
+
+/*----------Ad Seguro------------*/
+.ad-seguro-bg {
+    background-color: var(--c10);
+    box-shadow: inset 0 120px var(--w), inset 0 -120px var(--b);
+}
+
+.ad-seguro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin: 0px auto;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.ad-seguro-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.ad-seguro h1, p {
+    margin-bottom: 32px;
+}
+
+.ad-seguro p {
+    max-width: 45ch;
+}
+
+.ad-seguro h1 {
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+
+
+

@@ -41,6 +41,9 @@
     position: relative;
 }
 
+.depoimento-conteudo blockquote p {
+}
+
 .depoimento-conteudo span {
     display: flex;
     justify-content: start;
