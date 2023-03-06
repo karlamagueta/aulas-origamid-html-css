@@ -35,6 +35,10 @@
 /*------Bicicleta--------*/
 @import './bicicleta/bicicleta.css';
 
+/*------Bicicleta--------*/
+@import './contato/contato.css';
+@import './contato/lojas.css';
+
 /*--------Fontes------*/
 @font-face {
     font-family: 'poppins';

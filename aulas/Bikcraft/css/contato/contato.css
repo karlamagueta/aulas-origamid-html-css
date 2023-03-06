@@ -1,0 +1,12 @@
+#contato {
+    background-color: var(--c2);
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.contato-redes {
+    display: flex;
+}
