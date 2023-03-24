@@ -6,6 +6,7 @@
     max-height: 800px;
     align-items: end;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .depoimento img {
