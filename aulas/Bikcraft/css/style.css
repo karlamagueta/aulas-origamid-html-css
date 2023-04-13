@@ -47,7 +47,7 @@
 /*--------Fontes------*/
 @font-face {
     font-family: 'poppins';
-    src: url(https://github.com/itfoundry/Poppins);
+    src: local(Poppins-Bold.ttf);
 }
 
 @font-face {

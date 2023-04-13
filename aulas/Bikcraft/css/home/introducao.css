@@ -7,16 +7,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 40px;
-    align-items: flex-end;
 }
 
 .intro-conteudo {
     align-self: end;
     padding-bottom: 200px;
+    align-self: end;
 }
 
 .intro-img {
     height: 100%;
+
 }
 
 .intro img {
