@@ -1,6 +1,4 @@
 @import './global.css';
-@import './utilidades/cores.css';
-@import './utilidades/tipografia.css';
 @import './header.css';
 @import './footer.css';
 
@@ -8,6 +6,10 @@
 /*----Utilidades---*/
 @import './utilidades/componentes.css';
 @import './utilidades/formulario.css';
+@import './utilidades/cores.css';
+@import './utilidades/tipografia.css';
+@import './utilidades/animacao.css';
+
 
 /*-------Home--------*/
 @import './home/introducao.css';
