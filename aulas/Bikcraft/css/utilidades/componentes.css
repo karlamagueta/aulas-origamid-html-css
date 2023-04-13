@@ -59,6 +59,10 @@
     color: var(--w);
 }
 
+#logo-img img:hover {
+    -webkit-transform: scale(1);
+}
+
 /*Titulos das Paginas internas*/
 
 .titulo-bg {
