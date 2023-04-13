@@ -1,5 +1,5 @@
 
-
+//Ativar links do menu
 const links = document.querySelectorAll('.header-menu a')
 
 function ativarLink(link) {
@@ -23,6 +23,8 @@ function ativarProduto(parametro) {
     elemento.checked = true;
   }
 }
+
+parametros.forEach(ativarProduto);
 
 //Faq
 
