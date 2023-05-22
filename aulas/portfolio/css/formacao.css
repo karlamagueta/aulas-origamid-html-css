@@ -1,0 +1,244 @@
+.bg-diferente {
+    background-color: #444;
+}
+
+.grid-2 {
+    margin: 0px auto;
+    max-width: 1440px;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.itens-menu#formacao {
+    color: #3c3c3c;
+    grid-row: 1 / 7;
+}
+
+.bold-form {
+    color: #F8F8F8;
+    font-weight: 700;
+}
+
+.sobre-formacao{
+    color: #F8F8F8;
+    grid-column: 2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-right: 90px;
+    align-self: center;
+    max-width: 750px;
+    margin-top: 105px;
+
+}
+
+.cursos-recentes, .idiomas {
+    text-transform: uppercase;
+    color: #777;
+    font-weight: 700;
+    font-size: 1.125rem;
+    position: relative;
+}
+
+.icone-cursos {
+    height: 24px;
+    position: absolute;
+    display: block;
+    content: '';
+    top: 18px;
+    left: -40px;
+}
+
+.grid-formacao {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+}
+
+.lista-formacao {
+    flex: 1;
+    background-color: #3c3c3c;
+    margin: 10px;
+}
+
+
+.formacao-titulo {
+    position: relative;
+}
+
+.formacao-titulo, .formacao-onde {
+    color: #999;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "barlow";
+    grid-column: 1;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.formacao-titulo::before {
+    display: block;
+    content: '';
+    height: 20px;
+    width: 3px;
+    background-color: #E9A55B;
+    position: absolute;
+    left: -13px;
+}
+
+.formacao-curso {
+    display: flex;
+    flex-wrap: wrap;
+    color: #f2f2f2;
+    word-break: keep-all;
+    font-family: "barlow";
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.idiomas {
+    grid-column: 2;
+}
+.icone-idioma {
+    height: 24px;
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0px;
+    left: -40px;
+}
+
+.lista-idiomas {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 105px;
+    max-width: 600px;
+    margin-left: 0px;
+    list-style: none;
+    color: #d8d8d8;
+    font-weight: 500;
+    font-family: 'barlow';
+    font-size: 1.125rem;
+    margin-left: -40px;
+    column-gap: 40px;
+    justify-items: start;
+}
+
+.lista-idiomas ul li {
+    justify-self: start;
+    padding: 10px;
+}
+
+.idioma-contraste {
+    color: #777;
+    font-weight: 500;
+    font-family: "barlow";
+    text-transform: capitalize;
+    
+}
+
+.outros-cursos {
+    grid-column: 2;
+    position: relative;
+}
+
+.outros-cursos h3 {
+    text-transform: uppercase;
+    color: #777;
+}
+
+.cursos-antigos {
+    grid-column: 2;
+    list-style: none;
+    color: #d8d8d8;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-left: -40px;
+}
+
+.icone-cursos-antigos {
+    height: 24px;
+    position: absolute;
+    display: block;
+    content: '';
+    top: 20px;
+    left: -40px;
+
+}
+
+@media (max-width: 980px ) {
+    .sobre-formacao{
+        font-size: 1.25rem;
+    }
+
+    .grid-formacao{
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .grid-2 {
+        display: block;
+        margin: 0px;
+    }
+
+    .bg-diferente {
+        padding-bottom: 1px;
+    }
+
+    .itens-menu#formacao {
+        grid-column: 2;
+        word-break: keep-all;
+        color: #E9A55B;
+        line-height: 1.7;
+        justify-content: start;
+        margin-top: 30px;
+        
+    }
+
+    .sobre-formacao {
+        margin-top: 0px;
+        margin: 10px 30px 10px 30px;
+    }
+
+    .cursos-recentes {
+        grid-column: 2;
+        margin-left: 80px;
+    }
+    .icone-cursos {
+        top: 0px;
+        left: -40px;
+    }
+
+    .grid-formacao {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cursos-antigos {
+        margin-left: 0px;
+    }
+
+    h3 {
+        margin-left: 80px;
+    }
+
+    .lista-idiomas {
+        margin-left: 0px;
+    }    
+
+    .icone-cursos-antigos {
+        left: 40px;
+        top: 0px;
+    }
+
+}
+

@@ -1,8 +1,11 @@
 @charset "UTF-8";
-@import "./header.css";
-@import "./main.css";
-@import "./formacao.css";
-@import "./footer.css";
+@import "/css/main.css";
+@import "/css/footer.css";
+@import "/css/header.css";
+@import "/css/formacao.css";
+@import "/css/projetos.css";
+
+
 @font-face {
     font-family: 'Bodoni';
     src: url('bodoni_2.ttf') format('ttf');

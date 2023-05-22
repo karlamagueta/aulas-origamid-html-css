@@ -1,0 +1,47 @@
+.projeto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.875rem;
+    margin: 2.5rem;
+}
+.projeto--ui--titulo {
+    word-break: break-all;
+    margin-left: 40px;
+    grid-column: 1;
+    font-size: 8.75rem;
+    color: #F2F2F2;
+    grid-row:  1 / 4;
+    font-family: "Bodoni";
+    align-self: center;
+    margin: 0px
+}
+
+.projeto--ui--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.875rem;
+}
+
+.projeto--ui--grid img {
+    width: 20rem;
+    height: 16.25rem;
+    object-fit: cover;
+    border-radius: .3125rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: grayscale(100%);
+}
+
+.projeto--ui--grid img:hover {
+    filter: grayscale(0%);
+    transition: .4s;
+}
+
+.btn--projeto {
+    display: flex;
+    padding: .625rem 1.25rem;
+    text-decoration: none;
+    background: #DCDCDC;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+

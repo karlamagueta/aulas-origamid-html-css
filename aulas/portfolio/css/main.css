@@ -1,0 +1,395 @@
+.main{
+    max-width: 100%;
+    margin-bottom: 0px;
+}
+
+.intro {
+    max-width: 1440px;
+    display: grid;
+    margin: 0px auto;
+}
+
+.foto-ka {
+    max-width: 290px;
+    display: block;
+    grid-column: 1;
+    margin: auto;
+}
+
+h1 {
+    grid-column: 2;
+    font-family: 'Bodoni2';
+    color: #1E1E1E;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    line-height: 86px;
+    margin-left: 116px;
+}
+
+.adelia {
+    font-family: adelia;
+}
+
+.localizacao {
+    grid-column: 2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 116px;
+    font-size: 1.5rem;
+    margin-top: -80px;
+    font-family: 'barlow';
+    color: #999;
+}
+
+.grid-exp {
+    margin: 0px auto;
+    max-width: 1440px;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 0px;
+}
+
+.itens-menu {
+    grid-column: 1;
+    font-size: 8.75rem;
+    color: #F2F2F2;
+    grid-row:  1 / 4;
+    font-family: "Bodoni";
+    align-self: center;
+    margin: 0px
+    margin-left: 40px;
+    max-width: 4ch;
+}
+
+h2 {
+    word-break: break-all;
+    margin-left: 40px;
+}
+
+.sobre-exp {
+    grid-column: 2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #5f5f5f; 
+    margin-right: 90px;
+    align-self: center;
+    max-width: 750px;
+}
+
+.bold {
+    font-weight: 700;
+    color: #3c3c3c;
+}
+
+.grid-empresas .data {
+    color: #E9A55B;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: "barlow";
+    position: absolute;
+    top: 15px;
+    left: -120px;
+}
+
+
+.grid-empresas {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.grid-empresas ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    margin-top: 0px;
+
+}
+.grid-empresas ul li {
+    list-style: none;
+    background-color: #FBFBFB;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.125rem;
+    color: #1e1e1e;
+}
+
+.grid-empresas p {
+    font-family: "barlow";
+    font-size: 1.125rem;
+    padding: 0px;
+    margin-left: 40px;
+    line-height: 1.5;
+    color: #5f5f5f;
+}
+
+.data {
+    display: block;
+    content: '';
+    position: absolute;
+}
+
+.empresa {
+    color: #3c3c3c;
+    grid-column: 1;
+    font-family: "Gothic A1";
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.empresa::before {
+    display: block;
+    content: '';
+    height: 20px;
+    width: 3px;
+    background-color: #E9A55B;
+    position: absolute;
+    left: -42px;
+}
+
+.cargo {
+    color: #3c3c3c;
+    grid-column: 2;
+    justify-self: start;
+    font-family: "Gothic A1";
+    font-size: 1.25rem;
+    word-break: keep-all;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.caixa-exp {
+    padding: 5px 10px;
+    gap: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin: 10px;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    h1 {
+        grid-column: 2;
+        justify-content: center;
+        align-self: center;
+        margin: 0 auto;
+        margin-left: 116px;
+        font-size: 3rem;
+        line-height: 60px;
+        max-width: 100%;
+    }
+
+    .localizacao {
+        grid-column: 2;
+        grid-row: 3;
+        margin-top: -60px;
+        margin-bottom: 0px;
+        margin-left: 116px;
+        font-size: 1.5rem;
+        font-family: 'barlow';
+        color: #999;
+    }
+
+    .foto-ka {
+        max-width: 250px;
+    }
+
+    .itens-menu {
+        font-size: 6rem;
+    }
+
+    .sobre-exp {
+        font-size: 1.3rem;
+    }
+    .grid-empresas .data {
+        top: 0px;
+        left: -120px;
+    }
+    
+}
+
+@media (max-width: 980px) {
+
+    body {
+        margin: 0px;
+    }
+    
+    .main {
+        display: grid;
+        grid-area: auto;
+        grid-template-columns: 2;
+        max-width: 100%;
+    }
+
+    .intro {
+        grid-row: 1;
+    }
+
+    h1 {
+        grid-column: 2;
+        font-size: 3.2rem;
+        justify-content: center;
+        margin: 0 auto;
+        margin-left: 40px;
+        font-size: 2rem;
+        line-height: 40px;
+        max-width: 100%;
+        align-content: center;
+    }
+
+    .foto-ka {
+        max-width: 100%;
+        max-height: 300px;
+        grid-row: 1;
+        grid-column: 1 / -1;
+    }
+
+
+    .localizacao {
+        font-size: 1rem;
+        margin-left: 40px;
+        margin-top: -60px;
+    }
+
+    .itens-menu {
+        grid-column: 1;
+        font-size: 5rem;
+        margin: 0px;
+        margin-left: 40px;
+        max-width: 4ch;
+    }
+
+    .sobre-exp {
+        font-size: 1.25rem;
+        margin: 20px;
+    }
+
+    .data {
+        margin-left: 40px;
+    }
+
+
+    .itens-menu{
+        color: #eaeaea ;
+        font-size: 3.5rem;
+    }
+
+
+}
+@media (max-width: 735px) {
+
+    .main {
+        margin: auto;
+    }
+
+    .localizacao{
+        margin-top: 0px;
+    }
+
+    .foto-ka {
+        max-width: 100px;
+    }
+
+    .itens-menu {
+        font-size: 3rem;
+    }
+
+
+}
+
+@media (max-width: 663px) {
+
+    .foto-ka {
+        display: none;
+    }
+
+    .localizacao {
+        margin-top: 20px;
+    }
+    
+    .itens-menu {
+        font-size: 2.2rem;
+    }
+
+    .sobre-exp {
+        font-size: 1.1rem;
+    }
+
+    .grid-empresas {
+        grid-template-columns: 1fr;
+    }
+
+    .cargo {
+        color:#999;
+        font-size: 1rem;
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 40px;
+        font-weight: 500;
+        margin-top: 0px;
+    }
+
+    .empresa {
+        grid-row: 1;
+    }
+
+    .grid-empresas p{
+        grid-row: 3;
+    }
+
+    .caixa-exp {
+        grid-row: 4;
+    }
+
+    .data {
+        display: block;
+        justify-itens: center;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .grid-exp {
+        margin-bottom: 0px;
+        margin-left: 20px;
+        grid-template-columns: 1fr 7fr;
+        padding-bottom: -20px;
+    }
+
+    .grid-exp p {
+        margin: 20px 40px;
+    }
+
+    .sobre-exp {
+        margin: 0px 60px;
+    }
+
+    .caixa-exp {
+        margin-left: 20px;
+        grid-column: 1;
+    }
+
+    .itens-menu {
+        padding-top: 50px;
+        grid-column: 2;
+        word-break: keep-all;
+        color: #E9A55B;
+        line-height: 1.7;
+    }
+
+    .data {
+        display: block;
+        margin:;
+    }
+    
+}
