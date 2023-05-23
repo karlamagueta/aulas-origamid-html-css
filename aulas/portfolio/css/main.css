@@ -27,7 +27,7 @@ h1 {
 }
 
 .adelia {
-    font-family: adelia;
+    font-family: 'adelia';
 }
 
 .localizacao {
@@ -45,7 +45,7 @@ h1 {
     margin: 0px auto;
     max-width: 1440px;
     display: grid;
-    margin-top: 100px;
+    margin-top: 60px;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 0px;
 }
@@ -83,42 +83,52 @@ h2 {
     color: #3c3c3c;
 }
 
-.grid-empresas .data {
+.grid-empresas {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-left: -75px;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+.data {
     color: #E9A55B;
     font-size: 1.125rem;
     font-weight: 500;
     font-family: "barlow";
-    position: absolute;
     top: 15px;
     left: -120px;
 }
 
-
-.grid-empresas {
-    grid-column: 2;
+.card--empresa {
+    padding: 5px 10px;
+    background-color: #F8F8F8;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    align-items: center;
-    margin-bottom: 40px;
-    position: relative;
 }
 
-.grid-empresas ul {
+.card--empresa ul {
     display: flex;
     flex-wrap: wrap;
-    padding: 5px 10px;
-    margin-top: 0px;
+    gap: 20px;
 
 }
-.grid-empresas ul li {
-    list-style: none;
-    background-color: #FBFBFB;
+
+.card--empresa ul li {
     justify-content: center;
-    align-self: center;
     font-size: 1.125rem;
     color: #1e1e1e;
+    background-color: ;
+}
+
+.cargo {
+    color: #3c3c3c;
+    grid-column: 2;
+    justify-self: start;
+    font-family: "Gothic A1";
+    font-size: 1rem;
+    word-break: keep-all;
+    line-height: 1.5;
 }
 
 .grid-empresas p {
@@ -130,12 +140,6 @@ h2 {
     color: #5f5f5f;
 }
 
-.data {
-    display: block;
-    content: '';
-    position: absolute;
-}
-
 .empresa {
     color: #3c3c3c;
     grid-column: 1;
@@ -144,14 +148,20 @@ h2 {
     position: relative;
 }
 
+.empresa span {
+    color: #999999;
+    font-weight: lighter;
+    word-break: keep-all;
+}
+
 .empresa::before {
     display: block;
     content: '';
     height: 20px;
-    width: 3px;
+    width: 4px;
     background-color: #E9A55B;
     position: absolute;
-    left: -42px;
+    left: -50px;
 }
 
 .cargo {
@@ -159,7 +169,7 @@ h2 {
     grid-column: 2;
     justify-self: start;
     font-family: "Gothic A1";
-    font-size: 1.25rem;
+    font-size: 1rem;
     word-break: keep-all;
     line-height: 1.5;
     margin-left: 20px;
@@ -172,8 +182,6 @@ h2 {
     border-radius: 3px;
     margin: 10px;
 }
-
-
 
 @media (max-width: 1200px) {
 
@@ -306,11 +314,11 @@ h2 {
 
 }
 
-@media (max-width: 663px) {
+@media (max-width: 700px) {
 
-    .foto-ka {
+/*    .foto-ka {
         display: none;
-    }
+    }*/
 
     .localizacao {
         margin-top: 20px;
@@ -321,11 +329,14 @@ h2 {
     }
 
     .sobre-exp {
+        grid-template-columns: 1fr;
         font-size: 1.1rem;
     }
 
     .grid-empresas {
         grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 40px;
     }
 
     .cargo {
@@ -342,22 +353,23 @@ h2 {
         grid-row: 1;
     }
 
-    .grid-empresas p{
+/*    .grid-empresas p{
         grid-row: 3;
-    }
+    }*/
 
     .caixa-exp {
         grid-row: 4;
     }
 
-    .data {
-        display: block;
-        justify-itens: center;
+    .div--data {
+        top: -50px;
+        left: 120px;
+        position: absolute;
     }
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
 
     .grid-exp {
         margin-bottom: 0px;
@@ -387,9 +399,12 @@ h2 {
         line-height: 1.7;
     }
 
-    .data {
-        display: block;
-        margin:;
+    .grid-empresas {
+        grid-template-columns: 1fr;
     }
-    
+
+    .grid-empresas .empresa {
+        font-size: 1.1rem;
+    }
+
 }

@@ -38,10 +38,14 @@
 
 .btn--projeto {
     display: flex;
+    width: max-content;
     padding: .625rem 1.25rem;
     text-decoration: none;
     background: #DCDCDC;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    grid-column: 2;
+    justify-items: flex-end;
 }
+
 

@@ -38,13 +38,15 @@ header {
     list-style: none;
     text-transform: uppercase;
     padding: 10px 20px;
+
 }
 
 .menu li a {
     text-decoration: none;
     color: #999;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: block;
+
 }
 nav ul li {
     display: flex;
@@ -54,7 +56,8 @@ nav ul li {
 
 nav ul li:hover {
     transition: 0.3s;
-    border-color: #E9A55B;
+    scale: 1.1;
+    color: ;
 }
 
 a{
